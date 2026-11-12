@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{color-scheme:dark;--background:204 29% 5%;--foreground:43 38% 91%;--card:198 20% 8%;--card-foreground:43 38% 91%;--popover:198 20% 9%;--popover-foreground:43 38% 91%;--primary:3 62% 61%;--primary-foreground:210 24% 7%;--secondary:190 13% 14%;--secondary-foreground:43 38% 91%;--muted:200 10% 16%;--muted-foreground:166 8% 60%;--accent:148 41% 66%;--accent-foreground:210 24% 7%;--destructive:3 71% 53%;--destructive-foreground:43 38% 91%;--border:195 15% 20%;--input:193 16% 25%;--ring:3 62% 61%;--sidebar-background:198 20% 8%;--sidebar-foreground:43 38% 91%;--sidebar-accent:200 10% 20%;--sidebar-accent-foreground:43 38% 91%;--sidebar-border:195 15% 20%;--sidebar-ring:3 62% 61%;}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;background:hsl(var(--background));color:hsl(var(--foreground));font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}a{text-decoration:none;color:inherit}input:focus-visible,button:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible,[role=button]:focus-visible{outline:2px solid hsl(var(--primary));outline-offset:3px}::selection{background:hsl(var(--primary)/.4)}
+.bn{font-family:'Noto Sans Bengali','Hind Siliguri','DM Sans',sans-serif}.bn .font-display{font-family:'Noto Serif Bengali',Georgia,serif}
+@layer components{
+ .eyebrow{@apply flex items-center gap-3 font-mono text-[10px] font-medium uppercase tracking-[.25em] text-primary;}
+ .field-label{@apply mb-2 block font-mono text-[10px] uppercase tracking-[.22em] text-muted-foreground;}
+ .game-input{@apply block h-12 w-full rounded-sm border border-input bg-background/90 px-4 text-sm text-foreground placeholder:text-muted-foreground/45 focus:border-primary focus:outline-none;}
+ .primary-action{@apply inline-flex min-h-12 items-center justify-center gap-4 rounded-sm border border-primary bg-primary px-6 py-3 font-mono text-[11px] font-semibold uppercase tracking-[.16em] text-primary-foreground transition-colors hover:bg-primary/85 disabled:opacity-40;}
+ .secondary-action{@apply inline-flex min-h-11 items-center justify-center gap-3 border border-border bg-background/60 px-5 py-2.5 font-mono text-[10px] uppercase tracking-wider transition-colors hover:border-primary/60 hover:text-primary;}
+ .icon-button{@apply inline-flex h-9 min-w-9 items-center justify-center rounded-sm border border-border px-2 text-foreground/75 transition-colors hover:border-primary/70 hover:text-foreground;}
+ .tiny-button{@apply inline-flex items-center gap-1 rounded-sm border border-border px-2 py-1.5 font-mono text-[8px] uppercase tracking-wider text-muted-foreground transition-colors hover:border-primary hover:text-foreground;}
+ .tiny-button.active{@apply border-accent/60 bg-accent/10 text-accent;}
+}
+.signal-range{height:4px;cursor:pointer;accent-color:hsl(var(--primary))}
+.hn-noise{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");}
+.hn-scanlines{background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 3px,rgba(0,0,0,.24) 3px 4px);}
+.hn-blink{animation:hnBlink 2s steps(2,start) infinite}.hn-breathe{animation:hnBreathe 4s ease-in-out infinite}.hn-glow{text-shadow:0 0 85px hsl(var(--primary)/.17)}
+.hn-glitching{animation:hnGlitch .14s linear 0s 6 alternate}
+@keyframes hnBlink{50%{opacity:.16}}@keyframes hnBreathe{50%{opacity:.35;transform:scale(1.05)}}@keyframes hnGlitch{0%{transform:translate(0);filter:brightness(1)}20%{transform:translate(3px,-2px);filter:contrast(2)}50%{transform:translate(-3px,1px);filter:hue-rotate(40deg)}80%{transform:translate(2px,3px)}100%{transform:translate(-1px,0)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hn-blink,.hn-breathe,.hn-glitching{animation:none}}

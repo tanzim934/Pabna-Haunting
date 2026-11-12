@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom';
+export default function PageNotFound() { return <div className="mx-auto flex min-h-[72vh] max-w-xl flex-col items-center justify-center px-6 text-center"><p className="mb-3 font-mono text-xs tracking-[.4em] text-primary">ERROR / 404</p><h1 className="font-display text-6xl">Lost in the signal.</h1><p className="mt-5 text-muted-foreground">The investigation node you requested cannot be found.</p><Link className="mt-8 border border-primary px-6 py-3 text-sm text-primary" to="/">Return to Gateway</Link></div>; }

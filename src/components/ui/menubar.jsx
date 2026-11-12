@@ -1,0 +1,20 @@
+import * as Primitive from '@radix-ui/react-menubar';
+
+import * as React from 'react';
+import {cn} from '@/lib/utils';
+export const Menubar=Primitive.Root;
+export const MenubarMenu=React.forwardRef(({className,...props},ref)=><Primitive.Menu ref={ref} className={cn('text-sm',className)} {...props}/>);
+export const MenubarTrigger=Primitive.Trigger;
+export const MenubarContent=React.forwardRef(({className,...props},ref)=><Primitive.Content ref={ref} className={cn('text-sm',className)} {...props}/>);
+export const MenubarItem=Primitive.Item;
+export const MenubarSeparator=React.forwardRef(({className,...props},ref)=><Primitive.Separator ref={ref} className={cn('text-sm',className)} {...props}/>);
+export const MenubarLabel=React.forwardRef(({className,...props},ref)=><Primitive.Label ref={ref} className={cn('text-sm',className)} {...props}/>);
+export const MenubarCheckboxItem=Primitive.CheckboxItem;
+export const MenubarRadioGroup=Primitive.RadioGroup;
+export const MenubarRadioItem=Primitive.RadioItem;
+export const MenubarPortal=Primitive.Portal;
+export const MenubarSubContent=React.forwardRef(({className,...props},ref)=><Primitive.SubContent ref={ref} className={cn('text-sm',className)} {...props}/>);
+export const MenubarSubTrigger=React.forwardRef(({className,...props},ref)=><Primitive.SubTrigger ref={ref} className={cn('text-sm',className)} {...props}/>);
+export const MenubarGroup=Primitive.Group;
+export const MenubarSub=Primitive.Sub;
+export const MenubarShortcut=React.forwardRef(({className,...props},ref)=><span ref={ref} className={cn('p-2',className)} {...props}/>);

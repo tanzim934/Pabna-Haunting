@@ -1,0 +1,2 @@
+import {DayPicker} from 'react-day-picker';import {cn} from '@/lib/utils';import {ChevronLeft,ChevronRight} from 'lucide-react';
+export function Calendar({className,showOutsideDays=true,...props}){return <DayPicker showOutsideDays={showOutsideDays} className={cn('p-3',className)} components={{IconLeft:()=><ChevronLeft className="h-4 w-4"/>,IconRight:()=><ChevronRight className="h-4 w-4"/>}} {...props}/>;}

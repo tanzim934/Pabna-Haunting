@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom';
+export default function UserNotRegisteredError(){return <div className="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center px-6 text-center"><h1 className="font-display text-5xl">Access restricted</h1><p className="mt-4 text-muted-foreground">This demonstration uses a fictional clearance terminal rather than real user accounts.</p><Link to="/" className="mt-8 border border-primary px-6 py-3 text-primary">Return to Gateway</Link></div>;}

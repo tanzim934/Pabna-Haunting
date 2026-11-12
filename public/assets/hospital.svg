@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="690" viewBox="0 0 980 690" fill="none">
+<defs>
+ <linearGradient id="sky" x1="490" y1="0" x2="490" y2="690" gradientUnits="userSpaceOnUse"><stop stop-color="#142929"/><stop offset=".5" stop-color="#172a29"/><stop offset="1" stop-color="#081416"/></linearGradient>
+ <linearGradient id="mist" x1="0" x2="1"><stop stop-color="#85aa9b" stop-opacity="0"/><stop offset=".5" stop-color="#8ba597" stop-opacity=".2"/><stop offset="1" stop-color="#90b1a4" stop-opacity="0"/></linearGradient>
+ <radialGradient id="moonlight"><stop stop-color="#d4ddbd" stop-opacity=".8"/><stop offset=".12" stop-color="#d8ddc8" stop-opacity=".55"/><stop offset="1" stop-color="#a5bca4" stop-opacity="0"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="13"/></filter>
+</defs>
+<rect width="980" height="690" fill="url(#sky)"/>
+<circle cx="655" cy="150" r="180" fill="url(#moonlight)"/>
+<circle cx="655" cy="150" r="46" fill="#d5d9bb" opacity=".76"/>
+<path d="M0 285 108 265 184 284 290 244 403 282 541 251 687 282 806 257 980 275V690H0Z" fill="#102323"/>
+<path d="M0 341 120 307 256 328 400 292 559 328 729 297 887 324 980 300V690H0Z" fill="#0c1c1c"/>
+<!-- trees -->
+<g fill="#081515"><path d="M90 520v-305h7v305zM51 323l44-123 43 124-26-17 31 44-48-22-40 22 31-44z"/><path d="M864 530V199h8v331zM824 324l44-142 53 146-35-25 34 55-48-26-49 30 34-59z"/><path d="M934 510V280h7v230zM906 368l31-94 36 94-24-16 26 36-35-15-33 17 23-38z"/></g>
+<!-- hospital silhouette -->
+<path d="M244 415V276l65-33 61 30v-63h238v55l73-32 71 33v161h24v139H220V415z" fill="#0a1517" stroke="#34504c" stroke-width="3"/>
+<path d="M352 212h275v-24H352zM442 188v-52h92v52" fill="#0a1517" stroke="#36534f" stroke-width="3"/>
+<path d="M475 143v-29h25v29M461 125h53" stroke="#b3bba2" stroke-width="3" opacity=".5"/>
+<path d="M219 421h565M238 456h530M237 511h530" stroke="#29403c" stroke-width="4"/>
+<g fill="#bcbf8e" opacity=".64"><rect x="295" y="301" width="23" height="45"/><rect x="352" y="307" width="22" height="44"/><rect x="417" y="269" width="24" height="52"/><rect x="466" y="269" width="24" height="52"/><rect x="516" y="269" width="24" height="52"/><rect x="571" y="269" width="24" height="52"/><rect x="651" y="304" width="20" height="43"/></g>
+<g fill="#192826" stroke="#47645c" stroke-width="2"><rect x="291" y="374" width="27" height="42"/><rect x="350" y="373" width="27" height="42"/><rect x="417" y="370" width="27" height="42"/><rect x="468" y="370" width="27" height="42"/><rect x="521" y="370" width="27" height="42"/><rect x="577" y="370" width="27" height="42"/><rect x="650" y="375" width="27" height="42"/></g>
+<rect x="458" y="444" width="84" height="119" fill="#101f1e" stroke="#5a7068" stroke-width="3"/>
+<path d="M500 445v117" stroke="#5a7068" stroke-width="3"/><circle cx="489" cy="502" r="3" fill="#bdc2a0"/>
+<!-- telegraph tower -->
+<g stroke="#718077" opacity=".75"><path d="M132 520 167 265 201 520M142 444h49M150 381h35M157 329h21M115 317h102M125 349h84M167 265v-54" stroke-width="3"/><path d="M115 317c-76-31-95-12-135-27M217 317c86-38 153-16 204-34" stroke-width="2"/></g>
+<!-- water -->
+<path d="M0 547Q120 528 250 547T500 547T750 547T980 543V690H0Z" fill="#102422"/>
+<g stroke="#728b80" stroke-width="1" opacity=".28"><path d="M20 561h250m36 7h228m101-13h278M0 587h182m75 5h232m104-13h345M61 613h300m38 10h250m70-8h230M0 658h350m200-5h375"/></g>
+<ellipse cx="490" cy="563" rx="440" ry="23" fill="url(#mist)" filter="url(#blur)"/>
+<path d="M0 474q180-32 350-7t344-8 286 7" stroke="#b2c4ad" stroke-opacity=".18" stroke-width="20" filter="url(#blur)"/>
+<g fill="#d7daba" opacity=".22"><circle cx="64" cy="102" r="2"/><circle cx="231" cy="159" r="1.5"/><circle cx="790" cy="89" r="1.7"/><circle cx="911" cy="211" r="1"/></g>
+</svg>

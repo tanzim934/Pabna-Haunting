@@ -1,0 +1,2 @@
+import * as React from 'react';import {useSize} from '@/hooks/use-size';
+export function useResponsiveImage({onLoad}={},parentRef){const wrapperRef=React.useRef(null),imgRef=React.useRef(null),size=useSize(wrapperRef),[loaded,setLoaded]=React.useState(false);React.useImperativeHandle(parentRef,()=>imgRef.current);return{wrapperRef,imgRef,loaded,options:size&&{width:size.width,height:size.height},handleLoad:e=>{setLoaded(true);onLoad?.(e)}};}

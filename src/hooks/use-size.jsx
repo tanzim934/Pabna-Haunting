@@ -1,0 +1,2 @@
+import * as React from 'react';
+export function useSize(ref){const [size,setSize]=React.useState(null);React.useLayoutEffect(()=>{const element=ref.current;if(!element)return;const bounds=element.getBoundingClientRect();setSize({width:bounds.width,height:bounds.height});const observer=new ResizeObserver(([entry])=>{setSize({width:entry.contentRect.width,height:entry.contentRect.height});});observer.observe(element);return()=>observer.disconnect();},[ref]);return size;}
