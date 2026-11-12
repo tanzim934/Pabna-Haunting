@@ -63,3 +63,11 @@ Reusable UI primitives are in `src/components/ui/` as standalone compatibility w
 ## Originality and historical context
 
 The asylum, incidents and patient records are **fictional**. Pabna place names are geographic and historical inspiration, not claims of paranormal events or real patient identities. No external image service is needed; `public/assets/hospital.svg` is a project-owned illustration.
+
+## Vercel Deployment Link
+
+🌐 **Live Website:** [Pabna Haunting](https://pabna-haunting-6mwra1pat-my-projects-4edc.vercel.app/)
+
+**Deployment Platform:** Vercel
+
+**Status:** Deployed
